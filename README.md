@@ -11,7 +11,7 @@ First Homework Assignment of the CE-5201 Procesamiento y Análisis de Imágenes 
 Clone this repository with git
 
 ```
-$ git clone <URL>
+$ git clone git@github.com:dcorderoch/img-viewer.git
 ```
 
 ### Prerequisites
