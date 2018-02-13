@@ -7,6 +7,6 @@
 #include <cstddef>
 #include <opencv2/opencv.hpp>
 
-void open_image (std::string file_name);
+void open_image (std::string valid_image_file_name);
 
 #endif // OPEN_IMAGE_H
