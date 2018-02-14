@@ -134,6 +134,14 @@ diff examples/template/Makefile ~/src/academics/dip/hw1/ltilib/Makefile
 < 
 ```
 
+to run the program, simply run
+
+```
+./ltilib <path-to-img>
+```
+
+where `<path-to-img>` is the name of an image file
+
 #### OpenCV viewer
 
 For the OpenCV viewer implementation, CMake was used, so no special set-up was needed, however, to keep the repository clean, I ran the command in the opencv subdirectory of this repository like so:
@@ -142,9 +150,13 @@ For the OpenCV viewer implementation, CMake was used, so no special set-up was n
 cmake -H./ -B./build && cd build && make
 ```
 
-### Style Guide
+to run the program, simply run
 
-`C++ Coding Standards: 101 Rules, Guidelines, and Best Practices`  by Herb Stutter, and Andrei Alexandrescu, was used as the coding style guide.
+```
+./image_viewer -f <path-to-img>
+```
+
+where `<path-to-img>` is the name of an image file
 
 ## Author
 

@@ -24,7 +24,7 @@ void parse_param_filename ( int argc, char** argv, std::string& file_name)
       boost::program_options::store (boost::program_options::parse_command_line (argc, argv, desc), vm);
 
       // if help option was passed, print help (and exit)
-      if (vm.count ("help"))
+      if (vm.count ("help") || argc == 1)
       {
         show_help ( program_name, desc );
         exit (SUCCESS);
@@ -52,6 +52,5 @@ void parse_param_filename ( int argc, char** argv, std::string& file_name)
     std::cerr << "Unhandled Exception reached the top of main: "
               << e.what() << ", application will now exit" << std::endl;
     exit (ERROR_UNHANDLED_EXCEPTION);
-
   }
 }
